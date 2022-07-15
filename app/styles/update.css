@@ -1,0 +1,10 @@
+#stu_det_form_1{
+    width: 40%;
+    height: 450px;
+    border:solid #000000;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffebcd;
+    font-size: 1em;
+}

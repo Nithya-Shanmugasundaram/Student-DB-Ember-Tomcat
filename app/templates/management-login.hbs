@@ -1,0 +1,20 @@
+<h1>Management Login</h1>
+<div id="form1">
+<form method="post"  >
+        <p id ="head">Management Login:</p>
+        <p>
+            <label id="lab" for ="mgmt_id"> Management ID: </label><br><br>
+            <input type="text" id="mgmt_id" name="mgmt_id" placeholder="Username" size = "20" maxlength="25" >
+        </p>
+        <p>
+            <label id="lab" for ="magmt_pwd"> Password: </label><br><br>
+            <input type="password" name="mgmt_pwd" id="mgmt_pwd"placeholder="Password:" size ="20" maxlength="20" >
+        </p>
+        <p>
+            <input type="submit"  value = "login" {{action  "verify_mgmt_login" }}>
+        </p>
+</form>
+</div>
+
+<p   class="link-stu" >{{#link-to "index" class="link-s"}}Home Page{{/link-to}}</p>
+{{outlet}}

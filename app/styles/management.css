@@ -1,0 +1,30 @@
+/**/
+.options
+{
+   float: left;
+    width: 30%;
+    height: 45px;
+    border: hsl(0, 0%, 0%);
+    text-align: center;
+    background-color: #ac2d51;
+    border-style: revert;
+    border-radius: 425px;
+    margin-right: 40px;
+    padding-top: 20px;
+    color:#ffebcd;
+     font-size: 20px;
+     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.link-mgmt
+{
+    color: #ffebcd;
+}
+#head{
+    font-size: 2em;
+    font-style: times normal;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0000ff;
+}

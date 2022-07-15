@@ -1,0 +1,36 @@
+.options-login
+{
+   float: center;
+    width: 30%;
+    height: 45px;
+    text-align: center;
+    background-color: #ac2d51;
+    border-style: revert;
+    border-radius: 425px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 20px;
+    color:#ffebcd;
+     font-size: 20px;
+     text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.link-login
+{
+    color: #ffebcd;
+}
+h1
+{
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size:60px; 
+  color: #79272e;
+}   
+h4
+{
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 20px; 
+  color: #ac2d51;
+}

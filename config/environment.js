@@ -4,8 +4,8 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'student-db-build',
     environment,
-    rootURL: '/',
-    locationType: 'auto',
+    rootURL: '/studentDB_ember',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

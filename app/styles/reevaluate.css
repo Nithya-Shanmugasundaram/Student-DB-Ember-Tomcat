@@ -1,0 +1,31 @@
+#reeval-update{
+    width: 40%;
+    height: 550px;
+    border:solid #000000;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffebcd;
+    font-size: 1.5em;    
+}
+#view_table
+{
+    text-align: center;
+}
+#submit
+{
+    width: 30%;
+    height: 50px;
+    text-align: center;
+    background-color: #ac2d51;
+    border-style: revert;
+    border-radius: 425px;
+    color: #ffebcd;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+#table
+{
+   margin-left: auto;
+   margin-right: auto;
+}

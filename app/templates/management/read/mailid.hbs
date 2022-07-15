@@ -1,0 +1,21 @@
+<div id="mailidpart">
+        <form method = "get" >
+            <p>
+                <label for="mailid">Mail id: </label>
+                 <input type="text" id="mailid" name="mailid" placeholder="mailid" size = "35" maxlength="40">
+             </p>
+             <label for="mailid_choice">Choice of search: </label>
+             <select id = "mailid_choice" multiple size="3">
+                <option value="equal">Equal</option>
+                <option value="notequal">Not Equal</option>
+                <option value="endscontains">Ends or contains With</option>
+                <option value="starts">Starts with</option>
+            </select>
+            <p>
+                <input type="submit" value="Submit Details" {{action "mailid_data"}}>
+            </p>
+        </form>
+    </div>
+    <div id="data">
+
+</div>

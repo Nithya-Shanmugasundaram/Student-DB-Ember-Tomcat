@@ -1,0 +1,44 @@
+ <h4>View the pending cases for reevaluation and update the marks</h4>
+    <div id="view_table">
+        <p style="font-size: 30px;">Click on the button to view the pending cases</p>
+        <form method="get">
+            <input id="submit" type="submit" value="View pending cases" {{action "table_update"}}>
+        </form>
+    </div>
+    <div>
+	<table id="table" border ="4" cellpadding ="6" cellspacing ="10" width ="40%" >
+        <thead>
+            <th>Roll no</th>
+            <th>Semester no:</th>
+            <th>Subject Id:</th>
+        </thead>
+        <tbody id="table_body">
+           
+        </tbody>
+        </table>
+	</div>
+    
+    <div id="reeval-update">
+        <form method="get">
+            <p><b>Mark updation form</b></p>
+            <p>
+            <label for="roll_no">Student Roll no: </label><br><br>
+            <input type="number" id="roll_no" name="roll_no" placeholder="roll no" size = "20" maxlength="25">
+            </p>
+            <p>
+                <label for="sem_no">Semester no: </label><br><br>
+                <input type="number" id="sem_no" name="sem_no" placeholder="sem no" size = "20" maxlength="25">
+            </p>
+            <p>
+                <label for="sub">Subject Id(between s1 to s6): </label><br><br>
+                <input type="text" id="sub" name="sub" placeholder="subject id" size = "20" maxlength="25">
+            </p>
+            <p>
+                <label for="mark">Updated Mark: </label><br><br>
+                <input type="number" step="any" id="mark" name="mark" placeholder="mark" size = "20" maxlength="25"> 
+            </p>
+            <p>
+                <input type="submit" value="Submit Details" {{ action "reevaluation"}}>
+            </p>
+        </form>
+    </div>

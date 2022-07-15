@@ -1,0 +1,27 @@
+<h1>Welcome to Management Page</h1>
+<h4><u>You can start by clicking on any of the options you need</u></h4><br>
+<form method="get" id="mlogout">
+    <p ><input id="setting" type="submit" value="Management Logout" {{action "mgmt_logout"}}></p>
+</form>
+<p class="options">
+    {{#link-to "management.insert" class="link-mgmt" }}Insert-Student-Details-and-Marks{{/link-to}}</p>
+
+<p class="options">
+    {{#link-to "management.update" class="link-mgmt"}} Update Student Details {{/link-to}}</p>
+
+<p class="options">
+    {{#link-to "management.delete" class="link-mgmt"}} Delete Student Details and Marks{{/link-to}}</p>
+
+<p class="options">
+    {{#link-to "management.read" class="link-mgmt"}} Read Student Information and View Information{{/link-to}}</p>
+
+<p class="options">
+    {{#link-to "management.reevaluate" class="link-mgmt"}} Reevaluate Marks{{/link-to}}</p>
+
+
+<p class="options">{{#link-to "index" class="link-mgmt"}}Home Page{{/link-to}}</p>
+
+
+<br><br>
+
+{{outlet}}

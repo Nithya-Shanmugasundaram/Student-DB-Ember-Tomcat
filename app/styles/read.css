@@ -1,0 +1,123 @@
+#namepart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;    
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#deptpart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mailidpart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#rollnopart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#yearpart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#attperpart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#cgpapart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ascdescpart
+{
+    float: center;
+    width: 30%;
+    height: 200px;
+    border:solid #000000;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#stu
+{
+    float: center;
+    width: 30%;
+    height: 350px;
+    border:solid #000000;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-left: 40px;
+}
+#data
+{
+    display: inline-block;
+    height: 350px;
+    margin-top: 50px;
+    text-align: center;
+}
+.inner-div
+{
+    float: left;
+    margin-left: 40px;
+    width: 500px;
+    background-color: #ffebcd;
+    border:solid #000000;
+    margin-bottom: 20px;
+}

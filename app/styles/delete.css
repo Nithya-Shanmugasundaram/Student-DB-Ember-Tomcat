@@ -1,0 +1,10 @@
+#delform{
+    width: 40%;
+    height: 200px;
+    border:solid #000000;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #ffebcd;
+    font-size: 1.5em;    
+}

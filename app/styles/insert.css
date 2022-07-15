@@ -1,0 +1,20 @@
+#stu_det_form{
+    float: right;
+    width: 40%;
+    height: 450px;
+    border:solid #000000;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-right: 30px;
+}
+#marks{
+    float: left;
+    width: 40%;
+    height: 500px;
+    border:solid #000000;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #ffebcd;
+    margin-left: 30px;
+}

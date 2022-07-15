@@ -1,0 +1,21 @@
+ <div id="deptpart">
+        <form method = "get" >
+            <p>
+                <label for="dept">Department: </label>
+                 <input type="text" id="dept" name="dept" placeholder="dept" size = "30" maxlength="35">
+             </p>
+             <label for="dept_choice">Choice of search: </label>
+             <select id = "dept_choice" multiple size="3">
+                <option value="equal">Equal</option>
+                <option value="notequal">Not Equal</option>
+                <option value="endscontains">Ends or contains With</option>
+                <option value="starts">Starts with</option>
+            </select>
+            <p>
+                <input type="submit" value="Submit Details" {{action "dept_data"}}>
+            </p>
+        </form>
+    </div>
+<div id="data">
+
+</div>

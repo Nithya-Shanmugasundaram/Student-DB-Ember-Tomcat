@@ -1,0 +1,33 @@
+<h1>You have entered the Reevaluation Page</h1>
+<p>
+<h4>Please enter the details for reevaluation</h4>
+</p>
+<div id="re_form">
+    <form method="get">
+        <p>Reevaluation form</p>
+        <p>
+        <label for="roll_no">Roll no: </label><br><br>
+        <input type="number" id="roll_no" name="roll_no" placeholder="roll no" size = "20" maxlength="25">
+        </p>
+        <p>
+            <label for="sem_no">Semester no: </label><br><br>
+            <input type="number" id="sem_no" name="sem_no" placeholder="sem no" size = "20" maxlength="25">
+        </p>
+        <p>
+            <label for="sub">Subject Id(between s1 to s6): </label><br><br>
+            <input type="text" id="sub" name="sub" placeholder="subject id" size = "20" maxlength="25">
+        </p>
+        <p>
+            <label for="mailid">Mail ID: </label><br><br>
+            <input type="email" id="mailid" name="mailid" placeholder="mail id" size = "35" maxlength="40">
+        </p>
+        <p>
+            <input type="submit" value="Submit Details"  {{action "reeval_app"}} >
+        </p>
+    </form>
+</div>  
+<br><br>
+<form method="get" id="slogout">
+<p><input id="setting" type="submit" value="Student Logout" {{action "stu_logout"}}></p>
+</form>
+<p   class="link-stu" >{{#link-to "index" class="link-s"}}Home Page{{/link-to}}</p>
