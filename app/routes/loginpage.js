@@ -1,13 +1,13 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-
-    actions:
+   actions:
     {
-        verify_mgmt_login(){
-            var url="login?mgmt_id="+document.getElementById("mgmt_id").value + "&mgmt_pwd=" + document.getElementById("mgmt_pwd").value;
+       j_security_check()
+        {
+            var url="j_security_check?j_username="+document.getElementById("id").value + "&j_password=" + document.getElementById("pwd").value;
             var request = new XMLHttpRequest();
-            var val="";
+            //var val="";
             try{
                 request.open("POST",url,true);
                 request.send();
@@ -15,14 +15,10 @@ export default Route.extend({
                     if (this.readyState == 4){
                         if(this.status==200)
                         {
-                            val= this.responseText;
-                            sessionStorage.setItem("mgmtsess",val);
-                            //alert(val);
-                            window.location="#/management";
-                            //alert("login successful");
+                            alert("login success j_sec_chk");
                         }
                         else{
-                            alert("login failed");
+                            alert("login failed wrong status");
                         }
                     }
                 }
@@ -31,7 +27,5 @@ export default Route.extend({
                     alert(e);
             }
         }
-       
     }
-
 });

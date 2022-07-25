@@ -7,8 +7,6 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('management-login');
-  this.route('student-login');
   this.route('management',{path: '/management'}, function() {
     this.route('read',{path: '/read'}, function() {
       this.route('cgpa');
@@ -24,6 +22,8 @@ Router.map(function() {
     this.route('reevaluate');
   });
   this.route('student');
+  this.route('login-main');
+  this.route('loginpage');
 });
 
 export default Router;

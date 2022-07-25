@@ -2,20 +2,20 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 
-    model()
+   /* model()
     {
         const sess_id = sessionStorage.getItem("stu_sess");
         if(sess_id==null)
         {
             window.location='#/student-login'
         }
-    },
+    },*/
     actions:
     {
         stu_logout()
         {
-           sessionStorage.removeItem("stu_sess");
-           var url="stu_logout";
+           //sessionStorage.removeItem("stu_sess");
+           var url="sys_logout";
             var request = new XMLHttpRequest();
             try{
                 request.open("POST",url,true);
@@ -24,7 +24,7 @@ export default Route.extend({
                     if (this.readyState == 4){
                         if(this.status==200)
                         {
-                            window.location='#/student-login';
+                            window.location='#/';
                            alert("logging out");
                         }
                         else{

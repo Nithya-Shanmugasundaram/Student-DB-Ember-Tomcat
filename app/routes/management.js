@@ -1,21 +1,21 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-    model()
+    /*model()
     {
        const sessid = sessionStorage.getItem("mgmtsess");
-       console.log(sessid);
+      // console.log(sessid);
        if(sessid==null)
        {
         window.location="#/management-login";
        }
-    },
+    },*/
     actions:
     {
         mgmt_logout()
         {
-           sessionStorage.removeItem("mgmtsess");
-           var url="mgmt_logout";
+          // sessionStorage.removeItem("mgmtsess");
+           var url="sys_logout";
             var request = new XMLHttpRequest();
             try{
                 request.open("POST",url,true);
@@ -25,10 +25,10 @@ export default Route.extend({
                         if(this.status==200)
                         {
                            alert("logging out");
-                           window.location='#/management-login';
+                           window.location='#/loginpage';
                         }
                         else{
-                            alert("logoun failed");
+                            alert("logout failed");
                         }
                     }
                 }
