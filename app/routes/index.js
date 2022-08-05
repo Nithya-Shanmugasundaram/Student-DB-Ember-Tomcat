@@ -4,7 +4,7 @@ export default Route.extend({
 
     actions:
     {
-       /*verify_login()
+       verify_login()
         {
             var url="login?id="+document.getElementById("id").value + "&pwd=" + document.getElementById("pwd").value;
             var request = new XMLHttpRequest();
@@ -20,10 +20,12 @@ export default Route.extend({
                            var val_trim=val.trim();
                             if(val_trim==='management')
                             {
+                               // sessionStorage.setItem("role","management");
                                 window.location="#/management";
                             }
                             else if(val_trim==="student")
                             {
+                               // sessionStorage.setItem("role","student");
                                 window.location="#/student";
                             }
                            else
@@ -34,6 +36,7 @@ export default Route.extend({
                         }
                         else{
                             alert("login failed wrong status");
+                            window.location="#/";
                         }
                     }
                 }
@@ -41,8 +44,8 @@ export default Route.extend({
             catch(e){
                     alert(e);
             }
-        },*/
-        roles()
+        },
+        /*roles()
         {
             var url="user_role_check";
             var request = new XMLHttpRequest();
@@ -79,6 +82,45 @@ export default Route.extend({
             catch(e){
                     alert(e);
             }
-        }
-    }
-});
+        }*/
+    },
+   /* model()
+        {
+            var url="user_role_check";
+            var request = new XMLHttpRequest();
+            //var val="";
+            try{
+                request.open("GET",url,true);
+                request.send();
+                request.onreadystatechange = function () {
+                    if (this.readyState == 4){
+                        if(this.status==200)
+                        {
+                            var val= this.responseText;
+                            var val_trim=val.trim();
+                            if(val_trim==="management")
+                            {
+                                window.location="#/management";
+                            }
+                            else if(val_trim==="student")
+                            {
+                                window.location="#/student";
+                            }
+                           else
+                            {
+                                console.log(val);
+                                //alert("login failed role not detected");
+                            }
+                        }
+                        else{
+                            alert("login failed wrong status");
+                        }
+                    }
+                }
+            }
+            catch(e){
+                    alert(e);
+            }
+        }*/            
+}
+);

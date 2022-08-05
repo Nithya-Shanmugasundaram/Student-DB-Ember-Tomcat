@@ -45,6 +45,14 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
+    ENV.locationType = 'none';
+
+    // keep test console output quieter
+    ENV.APP.LOG_ACTIVE_GENERATION = false;
+    ENV.APP.LOG_VIEW_LOOKUPS = false;
+
+    ENV.APP.rootElement = '#ember-production';
+    ENV.APP.autoboot = false;
   }
 
   return ENV;

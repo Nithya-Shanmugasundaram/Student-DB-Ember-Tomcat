@@ -9,17 +9,19 @@
     background-color: #ac2d51;
     border-style: revert;
     border-radius: 425px;
-    margin-right: 40px;
+    margin-right: 50px;
     padding-top: 20px;
     color:#ffebcd;
      font-size: 20px;
      text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     margin-top: 30px;
+    text-decoration: none;
 }
 .link-mgmt
 {
     color: #ffebcd;
+    text-decoration: none;
 }
 #head{
     font-size: 2em;
@@ -27,4 +29,23 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #0000ff;
+}
+.options2
+{
+   float: left;
+    width: 40%;
+    height: 45px;
+    border: hsl(0, 0%, 0%);
+    text-align: center;
+    background-color: #ac2d51;
+    border-style: revert;
+    border-radius: 425px;
+    margin-right: 10px;
+    padding-top: 20px;
+    color:#ffebcd;
+     font-size: 20px;
+     text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-decoration: none;
 }

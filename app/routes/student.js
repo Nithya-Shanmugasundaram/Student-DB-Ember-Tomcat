@@ -2,14 +2,45 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 
-   /* model()
+   model()
     {
-        const sess_id = sessionStorage.getItem("stu_sess");
-        if(sess_id==null)
-        {
-            window.location='#/student-login'
-        }
-    },*/
+        var url="verify_login";
+            var request = new XMLHttpRequest();
+            try{
+                request.open("POST",url,true);
+                request.send();
+                request.onreadystatechange = function () {
+                    if (this.readyState == 4){
+                        if(this.status==200)
+                        {
+                           const val = this.responseText;
+                           const val2=val.trim();
+                           if(val2=='student')
+                           {
+                            //alert("transfering to login page");
+                             window.location='#/student';
+                           }
+                           else
+                           {
+                            alert("invalidd credentials");
+                                window.location='#/';
+                           }
+                           /*if(val=='student')
+                           {
+                            window.location='#/management';
+                           }*/
+                        }
+                        else
+                        {
+                            window.location='#/';
+                        }
+                    }
+                }
+            }
+            catch(e){
+                    alert(e);
+            }
+    },
     actions:
     {
         stu_logout()
@@ -24,11 +55,11 @@ export default Route.extend({
                     if (this.readyState == 4){
                         if(this.status==200)
                         {
-                            window.location='#/';
                            alert("logging out");
+                           window.location='#/';
                         }
                         else{
-                            alert("logoun failed");
+                            alert("logout failed");
                         }
                     }
                 }

@@ -1,8 +1,9 @@
 <h1>Welcome to Student Database Management System</h1>
     <h4>Please Login into your respective roles</h4>
 <h1>Login Form index</h1>
+
 <div id="form2">
-<form method="post" action="j_security_check">
+<form method="post" >
     <p id ="head">Login:</p>
     <p>
         <label id="lab" for ="id">ID: </label><br><br>
@@ -13,10 +14,17 @@
         <input type="password" id="pwd" name="j_password" placeholder="Password:" size ="20" maxlength="20" required>
     </p>
     <p>
-        <input type="submit" value="login" >
+        <input type="submit" value="login" {{action "verify_login"}}>
     </p>
 </form>
-</div>
-<br>
+<div class="g_id_signin google-signin" data-type="standard"></div>
 
+</div>
+
+<div id="g_id_onload"
+         data-client_id="169207051925-hjheef65ld8mcc3braqg24ecrsi0ddjr.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse">
+</div>
+
+    
 {{outlet}}
