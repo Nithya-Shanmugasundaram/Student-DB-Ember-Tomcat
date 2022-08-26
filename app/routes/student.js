@@ -4,7 +4,7 @@ export default Route.extend({
 
    model()
     {
-        var url="verify_login";
+        /*var url="verify_login";
             var request = new XMLHttpRequest();
             try{
                 request.open("POST",url,true);
@@ -29,10 +29,49 @@ export default Route.extend({
                            {
                             window.location='#/management';
                            }*/
-                        }
+                       /* }
                         else
                         {
                             window.location='#/';
+                        }
+                    }
+                }
+            }
+            catch(e){
+                    alert(e);
+            }*/
+
+            var url="user_role_check";
+            var request = new XMLHttpRequest();
+            //var val="";
+            try{
+                request.open("GET",url,true);
+                request.send();
+                request.onreadystatechange = function () {
+                    if (this.readyState == 4){
+                        if(this.status==200)
+                        {
+                            var val= this.responseText;
+                            var val_trim=val.trim();
+                            if(val_trim==="management")
+                            {
+                                window.location="#/management";
+                            }
+                            else if(val_trim==="student")
+                            {
+                                window.location="#/student";
+                            }
+                           else
+                            {
+                                console.log(val);
+                                window.location='/studentDB_ember/login_bla.jsp';
+                                //alert("login failed role not detected");
+                            }
+                        }
+                        else{
+                            alert("login failed wrong status");
+                            window.location='/studentDB_ember/login_bla.jsp';
+                           // window.location='/login_bla.jsp';
                         }
                     }
                 }
@@ -56,7 +95,7 @@ export default Route.extend({
                         if(this.status==200)
                         {
                            alert("logging out");
-                           window.location='#/';
+                           window.location='/studentDB_ember/login_bla.jsp';
                         }
                         else{
                             alert("logout failed");

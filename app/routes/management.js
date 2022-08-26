@@ -8,7 +8,7 @@ export default Route.extend({
             window.location='#/';
         }
         else
-        { }*/
+        { }
             var url="verify_login";
             var request = new XMLHttpRequest();
             try{
@@ -40,6 +40,45 @@ export default Route.extend({
             }
             catch(e){
                     alert(e);
+            }*/
+
+            var url="user_role_check";
+            var request = new XMLHttpRequest();
+            //var val="";
+            try{
+                request.open("GET",url,true);
+                request.send();
+                request.onreadystatechange = function () {
+                    if (this.readyState == 4){
+                        if(this.status==200)
+                        {
+                            var val= this.responseText;
+                            var val_trim=val.trim();
+                            if(val_trim==="management")
+                            {
+                                window.location="#/management";
+                            }
+                            else if(val_trim==="student")
+                            {
+                                window.location="#/student";
+                            }
+                           else
+                            {
+                                window.location='/studentDB_ember/login_bla.jsp';
+                                console.log(val);
+                                //alert("login failed role not detected");
+                            }
+                        }
+                        else{
+                            window.location='/studentDB_ember/login_bla.jsp';
+                            alert("login failed wrong status");
+                           // window.location='/login_bla.jsp';
+                        }
+                    }
+                }
+            }
+            catch(e){
+                    alert(e);
             }
        
         
@@ -59,7 +98,7 @@ export default Route.extend({
                         if(this.status==200)
                         {
                            alert("logging out");
-                           window.location='#/';
+                           window.location='/studentDB_ember/login_bla.jsp';
                         }
                         else{
                             alert("logout failed");

@@ -2,7 +2,7 @@ import Route from '@ember/routing/route';
 
 export default Route.extend({
 
-    actions:
+    /*actions:
     {
        verify_login()
         {
@@ -82,9 +82,9 @@ export default Route.extend({
             catch(e){
                     alert(e);
             }
-        }*/
-    },
-   /* model()
+        }
+    },*/
+    model()
         {
             var url="user_role_check";
             var request = new XMLHttpRequest();
@@ -108,12 +108,15 @@ export default Route.extend({
                             }
                            else
                             {
+                                window.location="/studentDB_ember/login_bla.jsp";
                                 console.log(val);
                                 //alert("login failed role not detected");
                             }
                         }
                         else{
                             alert("login failed wrong status");
+                            window.location="/studentDB_ember/login_bla.jsp";
+                           // window.location='/login_bla.jsp';
                         }
                     }
                 }
@@ -121,6 +124,6 @@ export default Route.extend({
             catch(e){
                     alert(e);
             }
-        }*/            
+        }            
 }
 );
